@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+:root {
+    --black1: #222222;
+    --background: #0F0F0F;
+    --icon: #DEDEDE;
+    --input-back:#121212;
+    --input-border: #272727;
+    --input-border-focus: #322dc9;
+    --search:#838383;
+    --tube:#FF0000;
+}
+.logo  {
+    display: flex;
+    justify-content: center;    
+    width: 20%;
+
+    cursor: pointer;
+}
+.mytube{
+    width: 100%;
+}
+header a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.logo img {
+    width:40px;
+    margin: 10px;
+}
+.logo h1 {
+    color: var(--icon);
+    margin-top: 7px;
+}
+.logo h1 span {
+    color: var(--tube);
+}
+.logo h1 sup {
+    font-size: 10px;
+    color: var(--search);
+}
+.search-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.search-input input[type="text"] {
+    padding: 10px 40px 10px 10px; /* Adjust as needed */
+    width: 45%;
+    border: 1px solid var(--input-border);
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    font-size: 16px;
+    background-color: var(--input-back);
+    color: white;
+    
+
+}
+.search-input input[type="text"]:focus {
+    outline: none;
+    border: 0.5px solid var(--input-border-focus);
+
+}
+
+.search-input button {
+    width:60px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
+    color: var(--icon);
+    background-color: var(--black1);
+    padding: 11.5px;
+    border: 1px solid var(--input-border);
+    cursor: pointer;
+    border-bottom-right-radius: 20px; 
+    border-top-right-radius: 20px; 
+
+}
+
+.search-input .clear-icon {
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    color: var(--icon);
+    font-size: 17px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+.clear-icon:hover {
+    color: rgb(161, 160, 160);
+}
+article {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.container {
+    width: 60%;
+    margin: 20px;
+
+}
+.video {
+    display: flex;
+    margin: 10px;
+}
+.thumbnail img {
+    width: 360px;
+    height: 202px;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+.title {
+    margin: 6px;
+}
+.title h3 {
+    color: var(--icon);
+    margin: 10px;
+    cursor: pointer;
+}
+.title h5 {
+    color: var(--search);
+    margin: 10px;
+}
+.title span {
+    color: var(--icon);
+}
+.msg {
+    color: var(--icon);
+    display: flex;
+    justify-content: center;
+}
+.videoP-CONTAINER {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+body {
+    background-color: var(--background);
+}
